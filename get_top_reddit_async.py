@@ -34,6 +34,6 @@ all_groups = asyncio.gather(group1, group2, group3)
 start = time.time()
 results = loop.run_until_complete(all_groups)
 end = time.time()
-print('async time: ', end - start)
+print('async time: {:.3f}'.format(end - start))
 
 loop.close()

@@ -26,4 +26,4 @@ get_reddit_top('programming')
 get_reddit_top('compsci')
 end = time.time()
 
-print('Usual time: ', end - start)
+print('Usual time: {:.3f}'.format(end - start))
