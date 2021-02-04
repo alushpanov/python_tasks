@@ -6,7 +6,6 @@ import time
 
 async def get_json(client, url):
     async with client.get(url) as response:
-        assert response.status == 200
         return await response.read()
 
 

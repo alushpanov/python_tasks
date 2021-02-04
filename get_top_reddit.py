@@ -4,7 +4,6 @@ import time
 
 def get_json(url):
     with requests.get(url, headers={'User-agent': 'andrei'}) as response:
-        assert response.status_code == 200
         return response.json()
 
 
