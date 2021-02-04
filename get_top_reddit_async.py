@@ -18,7 +18,7 @@ async def get_reddit_top(subreddit, client):
         score = i['data']['score']
         title = i['data']['title']
         link = i['data']['url']
-        print(str(score) + ': ' + title + ' (' + link + ')')
+        print('{}: {} ({})'.format(score, title, link))
 
     print('DONE:', subreddit + '\n')
 
