@@ -3,7 +3,7 @@ import time
 
 
 def get_json(url):
-    with requests.get(url, headers={'User-agent': 'andrei'}) as response:
+    with requests.get(url, headers={'User-agent': 'get top app'}) as response:
         return response.json()
 
 
